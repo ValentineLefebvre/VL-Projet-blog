@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  blog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8976:80"
+      - "8977:443"
+    restart: unless-stopped
+    volumes:
+      - ./src:/var/www/html
+
+  database:
+    image: mariadb
+    restart: always
+    volumes:
+      - ./database/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    environment:
+      MYSQL_DATABASE: db_blog_docker
+      MYSQL_ROOT_PASSWORD: password
+
+
+volumes:
+  data:

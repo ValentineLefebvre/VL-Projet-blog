@@ -1,0 +1,289 @@
+/* drag'n drop */
+body {
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+}
+
+.container {
+    display: grid;
+   
+    grid-template-columns: 250px;
+    grid-template-rows: 80px 80px 80px ;
+    width: auto;
+    border: 3px solid black;
+    margin: 20px;
+    padding: 30px;
+}
+
+#article {
+    background-color: #DFEDF6;
+    border-radius: 8px;
+}
+
+.articleColor {
+    background-color: #DFEDF6;
+}
+
+input {
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.block1 {
+    display: flex;
+    justify-content: center;
+}
+.block2 {
+    display: flex;
+    justify-content: center;
+}
+.inputSign {
+    width: 250px;
+}
+
+.validate {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    background-color:#7FB8DC;
+}
+.sign {
+    text-decoration: none;
+    color: black;
+}
+.loginF {
+    color: black;
+}
+
+
+.signButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.containerSignUp {
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 20px;
+    gap: 20px;
+}
+
+#inscrire {
+    grid-row: 100px;
+}
+
+#baseHtml {
+    display:grid;
+    grid-template-rows:  repeat(3,50px);
+    grid-template-columns: 150px 400px;
+}
+
+button {
+    background-color:#7FB8DC;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.bannerSize {
+    width: 1000px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+#open_pages_list {
+    position: absolute;
+    top: 900px;
+    left: 600px;
+}
+
+#pages_list {
+    position: absolute;
+    top: 960px;
+    left: 600px;
+}
+#open_groups_list {
+    position: absolute;
+    top: 900px;
+    left: 900px;
+}
+#groups_list {
+    position: absolute;
+    top: 960px;
+    left: 900px;
+}
+
+#open_invitation_list {
+    position: absolute;
+    top: 1200px;
+    left: 900px;
+}
+#invitation_list {
+    position: absolute;
+    top: 1260px;
+    left: 900px;
+}
+
+#open_new_page {
+    position: absolute;
+    top: 600px;
+    left: 600px;
+}
+#new_page_section {
+    position: absolute;
+    top: 660px;
+    left: 600px;
+}
+#open_new_group {
+    position: absolute;
+    top: 600px;
+    left: 900px;
+}
+#new_group_section {
+    position: absolute;
+    top: 660px;
+    left: 900px;
+}
+#open_followers_list {
+    position: absolute;
+    top: 622px;
+    left: 600px;
+}
+
+#followers_list {
+    position: absolute;
+    top: 682px;
+    left: 600px;
+}
+#open_members_list {
+    position: absolute;
+    top: 622px;
+    left: 600px;
+}
+
+#members_list {
+    position: absolute;
+    top: 682px;
+    left: 600px;
+}
+#open_banned_list {
+    position: absolute;
+    top: 622px;
+    left: 900px;
+}
+#banned_list {
+    position: absolute;
+    top: 682px;
+    left: 900px;
+}
+#profileName {
+    padding-left: 10px;
+}
+
+#publicationLabel {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.settingName {
+    display: flex;
+}
+h3, h2  {
+    margin-top: 20px;
+}
+h4  {
+    margin-top: 20px;
+}
+
+#depose {
+    /* position: absolute; */
+    height:60px;
+    width: 374px;
+    font-size:20px;
+    line-height: 60px;
+    color:#999;
+    text-align: center;
+    border:2px dashed;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#depose.onDropZone {
+    background-color: #00ff87;
+    color:#000;
+    border:1.8px solid #00ff87;
+}
+#fileToUpload {
+    display: none;
+}
+
+#preview {
+    display:none;
+}
+.fichier img {
+    max-height: 80px;
+    max-width: 80px;
+    margin-right:10px;
+    vertical-align: middle;
+}
+
+/* every button */
+button {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* modify_article_form */
+#form_modify_article {
+    display: none;
+}
+
+#comment_section {
+    display: none;
+}
+
+#new_page_section {
+    display: none;
+}
+
+#new_group_section {
+    display: none;
+}
+
+#form_modify_comment {
+    display: none;
+}
+
+#change_chat_img {
+    display: none;
+}
+ #canHelp {
+    position: absolute;
+    top: 43px;
+    right: 100px;
+
+}
+
+#profilPic {
+    border: 1px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+}
+
+#newPublicationForm {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
