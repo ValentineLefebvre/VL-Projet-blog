@@ -16,7 +16,6 @@ session_start();
 $pdo = new PDO("mysql:host=database:3306;dbname=db_blog_docker", "root", "password");
 $query = $pdo->query("SELECT `email` FROM `users`");
 $users_emails = $query->fetchAll(PDO::FETCH_ASSOC);
-var_dump($users_emails);
 ?>
 <br>
 <br>
@@ -124,7 +123,6 @@ var_dump($users_emails);
 					":email" => $mail
 				]);
 				$newUserInfo = $newUserInfoRequest -> fetch();
-				var_dump($newUserInfo);
 				// And we set the session.
 				$_SESSION['user_id'] = $newUserInfo["user_id"];
 				$_SESSION['pseudo'] = $pseudo;
@@ -177,14 +175,9 @@ var_dump($users_emails);
 		$_SESSION=[];
 	};
 	?>
+	<!-- The articles are supposed to be here -->
 <?php endif; ?>
-<h2>SESSION : </h2>
-<?php var_dump($_SESSION); ?>
 
-
-
-<?php //require __DIR__ . "./html_partial/timeline.php"?>
-<?php //require __DIR__ . "./php_partial/new_article.php"?>
 
 </body>
 </html>
